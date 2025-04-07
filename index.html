@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat com Cadastro e Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Formulário de Cadastro -->
+    <div id="signup-form" class="form-container">
+        <h2>Cadastro</h2>
+        <form id="registerForm">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" placeholder="Digite seu nome de usuário" required>
+            
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="#" onclick="toggleForms()">Faça login aqui</a>.</p>
+    </div>
+
+    <!-- Formulário de Login -->
+    <div id="login-form" class="form-container" style="display: none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Nome de Usuário:</label>
+            <input type="text" id="loginUsername" placeholder="Digite seu nome de usuário" required>
+            
+            <label for="loginPassword">Senha:</label>
+            <input type="password" id="loginPassword" placeholder="Digite sua senha" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="#" onclick="toggleForms()">Cadastre-se aqui</a>.</p>
+    </div>
+
+    <!-- Interface do Chat -->
+    <div id="chat-area" class="chat-container" style="display: none;">
+        <h2>Chat</h2>
+        <div id="messages" class="messages"></div>
+        <div class="message-input">
+            <input type="text" id="messageInput" placeholder="Digite sua mensagem..." required>
+            <button id="sendMessage">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
