@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat com Cadastro e Login</title>
+    <title>Sistema de Cadastro e Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -37,14 +37,10 @@
         <p>Não tem uma conta? <a href="#" onclick="toggleForms()">Cadastre-se aqui</a>.</p>
     </div>
 
-    <!-- Interface do Chat -->
-    <div id="chat-area" class="chat-container" style="display: none;">
-        <h2>Chat</h2>
-        <div id="messages" class="messages"></div>
-        <div class="message-input">
-            <input type="text" id="messageInput" placeholder="Digite sua mensagem..." required>
-            <button id="sendMessage">Enviar</button>
-        </div>
+    <!-- Área do Usuário Logado -->
+    <div id="user-area" class="user-container" style="display: none;">
+        <h2>Bem-vindo, <span id="welcomeUser"></span>!</h2>
+        <button id="logoutBtn">Sair</button>
     </div>
 
     <script src="script.js"></script>
