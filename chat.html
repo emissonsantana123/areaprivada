@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Chat System</h1>
+            <div class="user-info">
+                <span id="currentUser"></span>
+                <button id="logoutBtn">Sair</button>
+            </div>
+        </header>
+        
+        <div class="chat-main">
+            <div class="users-list">
+                <h3>Usuários Online</h3>
+                <ul id="onlineUsers">
+                    <!-- Lista de usuários será preenchida via JS -->
+                </ul>
+            </div>
+            
+            <div class="chat-area">
+                <div class="chat-tabs">
+                    <button class="chat-tab active" data-tab="public">Chat Público</button>
+                    <button class="chat-tab" data-tab="private">Chat Privado</button>
+                </div>
+                
+                <div id="publicChat" class="chat-content active">
+                    <div class="messages" id="publicMessages">
+                        <!-- Mensagens públicas serão exibidas aqui -->
+                    </div>
+                    <div class="message-input">
+                        <input type="text" id="publicMessageInput" placeholder="Digite sua mensagem...">
+                        <button id="sendPublicMessage">Enviar</button>
+                    </div>
+                </div>
+                
+                <div id="privateChat" class="chat-content">
+                    <div class="private-chat-header">
+                        <select id="privateChatSelect">
+                            <option value="">Selecione um usuário</option>
+                            <!-- Opções serão preenchidas via JS -->
+                        </select>
+                    </div>
+                    <div class="messages" id="privateMessages">
+                        <!-- Mensagens privadas serão exibidas aqui -->
+                    </div>
+                    <div class="message-input">
+                        <input type="text" id="privateMessageInput" placeholder="Digite sua mensagem..." disabled>
+                        <button id="sendPrivateMessage" disabled>Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
