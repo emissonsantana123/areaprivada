@@ -1,11 +1,11 @@
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBB-7xEw0UC7uJoe8a7cWfJXW6vAubcpcc",
-  authDomain: "test-e7dc5.firebaseapp.com",
-  projectId: "test-e7dc5",
-  storageBucket: "test-e7dc5.appspot.com",
-  messagingSenderId: "202121098578",
-  appId: "1:202121098578:web:2ddc1acfaf4b84182768b"
+  apiKey: "AIzaSyB3OZSNsTzAxqB9cPdDW-X8Q7BzOfTEKfI",
+  authDomain: "base-15b6a.firebaseapp.com",
+  projectId: "base-15b6a",
+  storageBucket: "base-15b6a.firebasestorage.app",
+  messagingSenderId: "519880668805",
+  appId: "1:519880668805:web:7746ddfeb8e05ed7eb9bec"
 };
 
 // Inicializa o Firebase
